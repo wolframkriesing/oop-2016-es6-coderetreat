@@ -6,12 +6,17 @@ describe('GoL session 1, no loops', () => {
 
   it('finds the first cell to touch', () => {
     const cells = [[3, 4], [5, 6]];
-    assert.deepEqual(firstCell(cells), [3, 4]);
+    assert.equal(leftBorder(cells), 3);
   });
 
-  it('finds the first cell to touch', () => {
+  it('finds the left border', () => {
     const cells = [[1, 1], [0, 0]];
-    assert.deepEqual(firstCell(cells), [0, 0]);
+    assert.equal(leftBorder(cells), 0);
+  });
+
+  it('finds the upper border', () => {
+    const cells = [[1, 2], [0, 1]];
+    assert.equal(upperBorder(cells), 1);
   });
 
   it('finds the last cell to touch', () => {
@@ -27,5 +32,8 @@ describe('GoL session 1, no loops', () => {
   
 });
 
-const firstCell = cells =>
-    cells.reduce( (prev, cell) => Math.min(prev[0], cell[0]) === prev[0] ? prev : cell )
+const DIMENSION_X = 0;
+const DIMENSION_Y = 1;
+const leftBorder = cells => minBorder(cells, DIMENSION_X);
+const upperBorder = cells => minBorder(cells, DIMENSION_Y);
+const minBorder = (cells, dimension) => cells.reduce((prev, cell) => Math.min(cell[dimension], prev[dimension]))

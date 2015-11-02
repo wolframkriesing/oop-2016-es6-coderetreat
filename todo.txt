@@ -1,1 +1,9 @@
- * Mail wegen W-Lan an W. Reuter
+ * Mail an W. Reuter
+  * wegen W-Lan
+  * TDD-bin auf Teilnehmer-Stick
+  * Pausen & Kaffee klären
+
+ * Dist-Version von TDD-bin auf Stick
+
+ * Slides für Intro
+ * Slides für Sessions

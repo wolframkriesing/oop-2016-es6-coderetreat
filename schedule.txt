@@ -1,3 +1,41 @@
+9:00 -16:00
+
+Given:
+* Pair Programming
+* Test-Driven
+
+Sessions:
+
+ GOL - genauere Vorgaben für jede Sessions
+ 
+
+ High-Order/no-Loop auf Grid-durchlaufen 
+  * ES6-Features: Arrow-Fct., const, let (es5: map, filter, every, foreach)
+  * Arrow functions: auto-return, () => {}, x => x + 1
+  * von var zu const/let, hoisting, local scope, bsp: ... {const x = 1} ...
+  * Aufgabe: Grid durchlaufen für Neighbour-Detection
+  * Vorgabe: 2D-Vektoren, Grafik zeigen, infinite Grid
+ 
+
+    
+
 
 intro
+ * CR-Intro
 
+ * polyfill, transpiler
+ * babel in konsole
+ * babel vorführen in slides
+ * erstmal ohne import mit default param und ...
+
+function blatick(number = 1, ...blub) {
+  console.log(blub);
+}
+
+blatick(1, 2, 3, 4, 5)
+
+ * warning zeigen bei import-Statement
+ * webpack, browserify erwähnen, node kann schon IE6
+ * kangax zeigen
+
+TDD-Lineup mit Falten
