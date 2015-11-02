@@ -6,7 +6,11 @@ Given:
 
 Sessions:
 
+ 4 * 30min
+
  GOL - genauere Vorgaben für jede Sessions
+ 
+ 1. Session: Ping-Pong GOL
  
 
  High-Order/no-Loop auf Grid-durchlaufen 
@@ -17,7 +21,22 @@ Sessions:
   * Vorgabe: 2D-Vektoren, Grafik zeigen, infinite Grid
  
 
-    
+ Class
+  * class creation, syntax, properties
+  * constructor, methods, static, setter/getter
+  * extends, super
+  * ES7: static properties
+  * No Primitives
+ 
+ Destructuring
+  * default-param (erstmal ohne destructuring)
+  * array, objects, default values, renaming, use for params
+  * No Primitives, no-dot / no-squares (inside a function no dot and no brackets are allowed, to force destructuring)
+ 
+  
+  
+ rest params & spread operator, promises, map, set
+ 
 
 
 intro

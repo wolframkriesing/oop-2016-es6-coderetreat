@@ -37,3 +37,8 @@ const DIMENSION_Y = 1;
 const leftBorder = cells => minBorder(cells, DIMENSION_X);
 const upperBorder = cells => minBorder(cells, DIMENSION_Y);
 const minBorder = (cells, dimension) => cells.reduce((prev, cell) => Math.min(cell[dimension], prev[dimension]))
+
+map = new Map();
+map.set(cell, neighborCount);
+map.entries(cell, count => count === 0 ? cell.dies() : cell.survives())
+
