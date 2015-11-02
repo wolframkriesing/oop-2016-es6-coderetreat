@@ -1,0 +1,22 @@
+{
+  "name": "oop-2016-es6-coderetreat",
+  "version": "1.0.0",
+  "description": "The ES6 CodeRetreat slides Marco Emrich and Wolfram Kriesing",
+  "main": "reveal.js",
+  "scripts": {
+    "test": "mocha gol.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolframkriesing/oop-2016-es6-coderetreat.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wolframkriesing/oop-2016-es6-coderetreat/issues"
+  },
+  "homepage": "https://github.com/wolframkriesing/oop-2016-es6-coderetreat#readme",
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  }
+}
