@@ -1,0 +1,7 @@
+Session Ideas
+
+ - value Objects
+ - no primitives
+ - first class collections
+ - no loops
+ - destructoring
