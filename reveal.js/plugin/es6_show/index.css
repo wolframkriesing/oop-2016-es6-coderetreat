@@ -20,9 +20,10 @@
   width: 100%;
 }
 .reveal .slides .code_slide .code_result  code {
-  max-height: 60px;
+  max-height: 45px;
   overflow: auto;
   background: #3f3f3f;
+  color: #dcdcdc;
 }
 .reveal .slides .code_slide .code_result.error_message pre code {
   color: red;

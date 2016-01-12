@@ -21,7 +21,7 @@ const addCodeMainContainer = sectionElem => {
   const div = document.createElement('div');
   div.classList.add('code_main_container');
   sectionElem.appendChild(div);
-  return div
+  return div;
 }
 
 const addToMainContainer = (main, elem) => {
@@ -53,9 +53,12 @@ const updateEs5CodeFor = section => {
 
   try {
     section.querySelector('code[data-es5]').innerText = es6ToEs5(es6Code);
+    evalResult = eval(es6Code);
+    showCodeResult(section, JSON.stringify(evalResult));
   } catch (e) {
     showError(section, e);
   }
+
 }
 
 const divWithClass = className => {
@@ -134,19 +137,5 @@ function evalJsCode(elem, jsCode) {
   console.log = orig_log;
 }
 
-function jsCompileResultDiv(jsCode) {
-  return '<div class="code_result js_result">' +
-      '<h3>JavaScript</h3><pre><code data-trim ></code></pre>' +
-    '</div>';
-}
-
-function showResult(elem, result)  {
-  if (result === "" || result === undefined) return;
-  var jsRunResultDiv =
-    '<div class="code_result run_result"><h3>Result</h3>' +
-      '<pre><code data-trim>' + result + '</code></pre>' +
-    '</div>';
-  $(elem).closest('section').append($(jsRunResultDiv));
-}
-
+*/
 })();
