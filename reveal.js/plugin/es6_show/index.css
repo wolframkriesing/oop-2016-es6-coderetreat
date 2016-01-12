@@ -9,12 +9,25 @@
 .reveal .slides pre code {font-size: 18px;}
 
 /* Code Slides */
-.reveal .slides .code_slide h3.code_header {width: 420px; text-align: left;}
+.reveal .slides .code_slide .code_main_container {
+  position: relative;
+  top: 5px;
+  left: 30px
+}
 .reveal .slides .code_slide .es5_main, .reveal .slides .code_slide .es6_main {width: 420px; position: absolute; top: 0px; }
 .reveal .slides .code_slide .es5_main {left: 480px;}
 .reveal .slides .code_slide .es6_main {left: 0px;}
-.reveal .slides .code_slide .code_main_container {position: relative; top: 10px; left: 30px}
-.reveal .slides .code_slide h1 {top: 20px; font-size: 90px;}
+
+.reveal .slides .code_slide h3.code_header {
+  width: 420px;
+  font-size: 35px;
+  text-align: left;
+}
+
+.reveal .slides .code_slide h1 {
+  top: 20px;
+  font-size: 60px;
+}
 .reveal .slides .code_slide .code_result  {
   position: absolute; top: 590px; left: 0px;
   width: 100%;
@@ -28,8 +41,3 @@
 .reveal .slides .code_slide .code_result.error_message pre code {
   color: red;
 }
-
-
-/*
-.run_log         {top: 380px; left: 0px; display: none;}
-*/
