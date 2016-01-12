@@ -1,3 +1,5 @@
+/* section {background-color: red;} */
+
 /* General Changes */
 .reveal .slides section {top: 0; height: 100%;}
 .reveal .slides pre {box-shadow: none; margin: 20px;}
@@ -6,20 +8,28 @@
     text-transform: none;
 }
 
-.reveal .slides pre code {font-size: 18px;}
+.reveal section img {border: none; box-shadow: none;}
 
 /* Code Slides */
+
+/* resets */
+.reveal .slides .code_slide pre code {font-size: 13px;}
+.reveal .slides .code_slide pre {margin: 0px; padding: 0; width: 100%}
+
 .reveal .slides .code_slide .code_main_container {
   position: relative;
   top: 5px;
-  left: 30px
+  left: 0px
 }
-.reveal .slides .code_slide .es5_main, .reveal .slides .code_slide .es6_main {width: 420px; position: absolute; top: 0px; }
-.reveal .slides .code_slide .es5_main {left: 480px;}
+.reveal .slides .code_slide .es5_main,
+.reveal .slides .code_slide .es6_main {
+  width: 470px;
+  position: absolute; top: 0px;
+}
+.reveal .slides .code_slide .es5_main {right: 0px;}
 .reveal .slides .code_slide .es6_main {left: 0px;}
 
 .reveal .slides .code_slide h3.code_header {
-  width: 420px;
   font-size: 35px;
   text-align: left;
 }
@@ -29,7 +39,7 @@
   font-size: 60px;
 }
 .reveal .slides .code_slide .code_result  {
-  position: absolute; top: 590px; left: 0px;
+  position: absolute; top: 620px; left: 0px;
   width: 100%;
 }
 .reveal .slides .code_slide .code_result  code {

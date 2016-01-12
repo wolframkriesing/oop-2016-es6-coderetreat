@@ -44,10 +44,14 @@
       <div class="slides">
 
 <section>
-	<h1>Session 3</h1>
-	<h2>Arrow Functions</h2>
+  <h1>Session 1</h1>
+  <h2>No Contraints</h2>
 </section>
 
+<section>
+  <h1>Session 2</h1>
+  <h2>ES6 Arrow Functions</h2>
+</section>
 
 <section class="code_slide">
   <h1>ES 6 Arrow Functions</h1>
@@ -109,29 +113,128 @@ const even = n => n % 2 === 0;
 </section>
 
 <section>
-	<h1>Session 3</h1>
-	<h2>Constraint: No Loops</h2>
+  <h1>Session 2</h1>
+  <h2>Constraint: No Loops</h2>
+</section>
+
+
+<section>
+  <h1>Session 3</h1>
+  <h2>ES6 Classes</h2>
+</section>
+
+<section class="code_slide">
+  <h1>ES 6 Classes</h1>
+    <pre><code data-es6 data-trim contenteditable data-es6>
+"use strict";
+
+class Person {
+}
+
+const peter = new Person();
+peter
+    </code></pre>
+</section>
+
+<section class="code_slide">
+  <h1>ES 6 Classes: constructor</h1>
+    <pre><code data-es6 data-trim contenteditable data-es6>
+"use strict";
+
+class Person {
+  constructor(firstName) {
+    this.firstName = firstName;
+  }
+}
+
+const peter = new Person("Peter");
+peter
+    </code></pre>
+</section>
+
+<section class="code_slide">
+  <h1>ES 6 Classes: get</h1>
+    <pre><code data-es6 data-trim contenteditable data-es6>
+"use strict";
+
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  get shortedName() {
+    return `${this.lastName}, ${this.firstName.charAt(0)}.`;
+  }
+
+}
+
+const peter = new Person("Peter", "Smith");
+peter.shortedName
+    </code></pre>
+</section>
+
+<section class="code_slide">
+  <h1>ES 6 Classes: set</h1>
+    <pre><code data-es6 data-trim contenteditable data-es6>
+"use strict";
+
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  set fullName(name) {
+    this.firstName = name.split(' ')[0];
+    this.lastName = name.split(' ')[1];
+  }
+}
+
+const person1 = new Person("Peter", "Smith");
+person1.fullName = 'Steve Wesson';
+person1
+    </code></pre>
 </section>
 
 <section>
-  <h2>Clever Quotes</h2>
-  <p>
-    These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-    &ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-  </p>
-  <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-    &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-    reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-  </blockquote>
+  <h1>Session 3</h1>
+  <h2>Constraint: No Primitives</h2>
 </section>
 
 <section>
-  <h2>Intergalactic Interconnections</h2>
-  <p>
-    You can link between slides internally,
-    <a href="#/2/3">like this</a>.
-  </p>
+  <h3 style="position: relative; top: -10px;">No Primitives</h3>
+
+	<img src="images/no_prims.png" style="height: 600px; position: relative; top: -30px;">
 </section>
+
+<section>
+  <h1>No Primitives</h1>
+
+	<ul>
+		<li>Alle primitiven Werte in Objekte “wrappen”</li>
+		<li>Keine primitiven Datentypen als Parameter</li>
+		<li><strong>Erlaubt</strong>: Konstruktoren dürfen Primitive als Argumente entgegennehmen</li>
+		<li><em>Challenge: max. 2 Attribute pro Klasse</em></li>
+	</ul>
+
+</section>
+
+<section>
+  <h1>Session 4</h1>
+  <h2>Destructoring</h2>
+</section>
+
+<section>
+  <h1>Session 4</h1>
+  <h2>Constraints</h2>
+  <ul>
+    <li>one argument per function/method</li>
+    <li>No index-Operator []</li>
+    <li>No dot-Operator for value-access</li>
+    <li>use <stronng>Destructioring</strong> instead</li>
+  </ul>
+</section>
+
 
       </div>
 
