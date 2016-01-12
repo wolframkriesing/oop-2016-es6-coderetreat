@@ -52,8 +52,9 @@ const updateEs5CodeFor = section => {
   removeOldCodeResult(section);
 
   try {
-    section.querySelector('code[data-es5]').innerText = es6ToEs5(es6Code);
-    evalResult = eval(es6Code);
+    const es5Code = es6ToEs5(es6Code);
+    section.querySelector('code[data-es5]').innerText = es5Code
+    evalResult = eval(es5Code);
     showCodeResult(section, JSON.stringify(evalResult));
   } catch (e) {
     showError(section, e);

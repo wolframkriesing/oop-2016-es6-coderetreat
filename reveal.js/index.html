@@ -45,7 +45,7 @@
 
 <section>
   <h1>Session 1</h1>
-  <h2>No Contraints</h2>
+	<h2>Start with the Rules…</h2>
 </section>
 
 <section>
@@ -91,7 +91,7 @@ double(4)
   <h1>ES 6 Arrow Functions: filter</h1>
     <pre><code data-es6 data-trim contenteditable data-es6>
 const even = n => n % 2 === 0;
-[1, 2, 3, 4, 6, 7].map(even)
+[1, 2, 3, 4, 6, 7].filter(even)
     </code></pre>
 </section>
 
@@ -222,6 +222,28 @@ person1
 <section>
   <h1>Session 4</h1>
   <h2>Destructoring</h2>
+</section>
+
+<section class="code_slide">
+  <h1>ES 6 Destructoring: Arrays</h1>
+    <pre><code data-es6 data-trim contenteditable data-es6>
+"use strict";
+
+let colors = ['blue', 'green'];
+let [a, b] = colors;
+a
+    </code></pre>
+</section>
+
+
+<section class="code_slide">
+  <h1>ES 6 Destructoring: Params</h1>
+    <pre><code data-es6 data-trim contenteditable data-es6>
+function formatProduct({name, price, currency = '$'}) {
+  return `${name}: ${currency}${price}`;
+}
+formatProduct({name: 'Tv', price: 35});
+    </code></pre>
 </section>
 
 <section>
