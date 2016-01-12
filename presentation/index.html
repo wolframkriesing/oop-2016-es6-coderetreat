@@ -45,7 +45,8 @@
 
 <section>
   <h1>Session 1</h1>
-	<h2>Start with the Rules…</h2>
+  <span class="fragment" data-fragment-index="1"><h2>Start with the Rules…</h2></span>
+  <span class="fragment" data-fragment-index="2"><h2>Ping Pong</h2></span>
 </section>
 
 <section>
@@ -114,7 +115,9 @@ const even = n => n % 2 === 0;
 
 <section>
   <h1>Session 2</h1>
-  <h2>Constraint: No Loops</h2>
+  <span class="fragment" data-fragment-index="1"><h2>Constraint: No Loops</h2></span>
+  <span class="fragment" data-fragment-index="2"><h2>Start with the Grid…</h2></span>
+  <span class="fragment" data-fragment-index="3"><h2>Use 2D Vectors</h2></span>
 </section>
 
 
@@ -198,24 +201,24 @@ person1
 
 <section>
   <h1>Session 3</h1>
-  <h2>Constraint: No Primitives</h2>
+  <span class="fragment" data-fragment-index="1"><h2>Constraint: No Primitives</h2></span>
 </section>
 
 <section>
   <h3 style="position: relative; top: -10px;">No Primitives</h3>
 
-	<img src="images/no_prims.png" style="height: 600px; position: relative; top: -30px;">
+  <img src="images/no_prims.png" style="height: 600px; position: relative; top: -30px;">
 </section>
 
 <section>
   <h1>No Primitives</h1>
 
-	<ul>
-		<li>Alle primitiven Werte in Objekte “wrappen”</li>
-		<li>Keine primitiven Datentypen als Parameter</li>
-		<li><strong>Erlaubt</strong>: Konstruktoren dürfen Primitive als Argumente entgegennehmen</li>
-		<li><em>Challenge: max. 2 Attribute pro Klasse</em></li>
-	</ul>
+  <ul>
+    <li>Alle primitiven Werte in Objekte “wrappen”</li>
+    <li>Keine primitiven Datentypen als Parameter</li>
+    <li><strong>Erlaubt</strong>: Konstruktoren dürfen Primitive als Argumente entgegennehmen</li>
+    <li><em>Challenge: max. 2 Attribute pro Klasse</em></li>
+  </ul>
 
 </section>
 
@@ -237,6 +240,20 @@ a
 
 
 <section class="code_slide">
+  <h1>ES 6 Destructoring: Objects</h1>
+    <pre><code data-es6 data-trim contenteditable data-es6>
+class Product {
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
+}
+let {name, price} = new Product('Tv', 35);
+name
+    </code></pre>
+</section>
+
+<section class="code_slide">
   <h1>ES 6 Destructoring: Params</h1>
     <pre><code data-es6 data-trim contenteditable data-es6>
 function formatProduct({name, price, currency = '$'}) {
@@ -250,10 +267,10 @@ formatProduct({name: 'Tv', price: 35});
   <h1>Session 4</h1>
   <h2>Constraints</h2>
   <ul>
-    <li>one argument per function/method</li>
-    <li>No index-Operator []</li>
-    <li>No dot-Operator for value-access</li>
-    <li>use <stronng>Destructioring</strong> instead</li>
+    <li class="fragment" data-fragment-index="1">one argument per function/method</li>
+    <li class="fragment" data-fragment-index="2">No index-Operator []</li>
+    <li class="fragment" data-fragment-index="3">No dot-Operator for value-access</li>
+    <li class="fragment" data-fragment-index="4">use <stronng>Destructoring</strong> instead</li>
   </ul>
 </section>
 

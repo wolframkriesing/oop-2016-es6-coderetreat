@@ -19,6 +19,8 @@ Sessions:
   * von var zu const/let, hoisting, local scope, bsp: ... {const x = 1} ...
   * Aufgabe: Grid durchlaufen für Neighbour-Detection
   * Vorgabe: 2D-Vektoren, Grafik zeigen, infinite Grid
+
+map vs object in ES6 ?
  
 
  Class
