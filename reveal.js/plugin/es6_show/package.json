@@ -1,0 +1,17 @@
+{
+  "name": "es6_show",
+  "version": "1.0.0",
+  "description": "",
+  "main": "es6_show.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marco Emrich",
+  "license": "LGPL-3.0",
+  "devDependencies": {
+    "traceur": "0.0.96"
+  },
+  "dependencies": {
+    "bower": "^1.7.2"
+  }
+}
