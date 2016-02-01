@@ -1,62 +1,30 @@
-9:00 -16:00
+9:00-9:30 
+	* Vorstellung Wolfram & Marco
+	* TDD-Fragen (Wer von euch macht TDD? Kennt es aus der Theorie? Hat schon mal? täglich? ...)
+	* Wer hat schon ein Test-Setup?
+	* Vorstellung der Teilnehmer (mit Augenmerk auf ES6, JS generell, TDD)
+	* Intro (wolfram)
+	* GOL (Marco)
+	* Lineup nach TDD-Kenntnissen
 
-Given:
-* Pair Programming
-* Test-Driven
+9:30-10:15 Session 1: Ping-Pong GOL
+10:15-10:30 Retro 1
 
-Sessions:
+Kaffee 10.30-11.00
 
- 4 * 30min
+11:00-12:00 Session 2: No-Loops (inkl. Erläuterung)
+12:00-12:15 Retro
 
- GOL - genauere Vorgaben für jede Sessions
- 
- 1. Session: Ping-Pong GOL
- 
+Mittag 12.00-13.00
 
- High-Order/no-Loop auf Grid-durchlaufen 
-  * ES6-Features: Arrow-Fct., const, let (es5: map, filter, every, foreach)
-  * Arrow functions: auto-return, () => {}, x => x + 1
-  * von var zu const/let, hoisting, local scope, bsp: ... {const x = 1} ...
-  * Aufgabe: Grid durchlaufen für Neighbour-Detection
-  * Vorgabe: 2D-Vektoren, Grafik zeigen, infinite Grid
+13:00 - 14:00 Session 3 (inkl. Erklärung: OOP/No-Prims)
+14:00 - 14:15 Retro
 
-map vs object in ES6 ?
- 
+14:15 - 14:45 Unsere verschobene Kaffe-Pause
 
- Class
-  * class creation, syntax, properties
-  * constructor, methods, static, setter/getter
-  * extends, super
-  * ES7: static properties
-  * No Primitives
- 
- Destructuring
-  * default-param (erstmal ohne destructuring)
-  * array, objects, default values, renaming, use for params
-  * No Primitives, no-dot / no-squares (inside a function no dot and no brackets are allowed, to force destructuring)
- 
-  
-  
- rest params & spread operator, promises, map, set
- 
+Kaffee 14.30-15.00
 
+14:45 - 15:30 Destructoring (inkl. Erklärung)
+15:30 - 16:00 End-Retro
+ 	
 
-intro
- * CR-Intro
-
- * polyfill, transpiler
- * babel in konsole
- * babel vorführen in slides
- * erstmal ohne import mit default param und ...
-
-function blatick(number = 1, ...blub) {
-  console.log(blub);
-}
-
-blatick(1, 2, 3, 4, 5)
-
- * warning zeigen bei import-Statement
- * webpack, browserify erwähnen, node kann schon IE6
- * kangax zeigen
-
-TDD-Lineup mit Falten

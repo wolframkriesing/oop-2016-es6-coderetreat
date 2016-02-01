@@ -1,0 +1,66 @@
+Given:
+* Pair Programming
+* Test-Driven
+
+Sessions:
+
+ 4 * 30min
+
+ GOL - genauere Vorgaben für jede Sessions
+ 
+ 1. Session: Ping-Pong GOL
+ 
+
+ High-Order/no-Loop auf Grid-durchlaufen 
+  * ES6-Features: Arrow-Fct., const, let (es5: map, filter, every, foreach)
+  * Arrow functions: auto-return, () => {}, x => x + 1
+  * von var zu const/let, hoisting, local scope, bsp: ... {const x = 1} ...
+  * Aufgabe: Grid durchlaufen für Neighbour-Detection
+  * Vorgabe: 2D-Vektoren, Grafik zeigen, infinite Grid
+
+map vs object in ES6 ?
+ 
+
+ Class
+  * class creation, syntax, properties
+  * constructor, methods, static, setter/getter
+  * extends, super
+  * ES7: static properties
+  * No Primitives
+ 
+ Destructuring
+  * default-param (erstmal ohne destructuring)
+  * array, objects, default values, renaming, use for params
+  * No Primitives, no-dot / no-squares (inside a function no dot and no brackets are allowed, to force destructuring)
+ 
+  
+  
+ rest params & spread operator, promises, map, set
+ 
+
+
+intro
+ * CR-Intro
+
+ * polyfill, transpiler
+ * babel in konsole
+ * babel vorführen in slides
+ * erstmal ohne import mit default param und ...
+
+function blatick(number = 1, ...blub) {
+  console.log(blub);
+}
+
+blatick(1, 2, 3, 4, 5)
+
+ * warning zeigen bei import-Statement
+ * webpack, browserify erwähnen, node kann schon IE6
+ * kangax zeigen
+
+TDD-Lineup mit Falten
+
+Session Ideas
+
+ - value Objects
+ - first class collections
+
