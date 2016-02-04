@@ -186,7 +186,7 @@
   <h1>ES 6 Arrow Functions</h1>
     <pre><code data-es6 data-trim contenteditable data-es6>
 const mult = (a, b) => {
-  result = a * b;
+  let result = a * b;
   return result;
 }
 mult(4, 5)
@@ -228,7 +228,7 @@ const even = n => n % 2 === 0;
   <h1>ES 6 Arrow Functions: reduce</h1>
     <pre><code data-es6 data-trim contenteditable data-es6>
 const add = (a, b) => a + b;
-[1, 2, 3,].reduce(add);
+[1, 2, 3].reduce(add);
     </code></pre>
 </section>
 
