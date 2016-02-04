@@ -1,4 +1,4 @@
-9:00-9:30 
+9:00-9:30
 	* Vorstellung Wolfram & Marco
 	* TDD-Fragen (Wer von euch macht TDD? Kennt es aus der Theorie? Hat schon mal? täglich? ...)
 	* Wer hat schon ein Test-Setup?
@@ -17,14 +17,14 @@ Kaffee 10.30-11.00
 
 Mittag 12.00-13.00
 
-13:00 - 14:00 Session 3 (inkl. Erklärung: OOP/No-Prims)
+13:00 - 14:15 Session 3 (inkl. Erklärung: OOP/No-Prims)
 14:00 - 14:15 Retro
 
 14:15 - 14:45 Unsere verschobene Kaffe-Pause
+
+Kata statt GOL
 
 Kaffee 14.30-15.00
 
 14:45 - 15:30 Destructoring (inkl. Erklärung)
 15:30 - 16:00 End-Retro
- 	
-
